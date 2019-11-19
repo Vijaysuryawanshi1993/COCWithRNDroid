@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="COC stats"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:background="@color/divider"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutTabHome"
+            style="@style/Navigation_Relative_Lay">
+
+            <ImageView
+                android:id="@+id/imageViewHome"
+                style="@style/Navigation_ImageView"
+                android:background="@mipmap/home" />
+
+            <TextView
+                android:id="@+id/textViewHome"
+                style="@style/Navigation_Text"
+                android:layout_toRightOf="@+id/imageViewHome"
+                android:text="Home" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="32dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTabSerach"
+            style="@style/Navigation_Relative_Lay">
+
+            <ImageView
+                android:id="@+id/imageViewSearch"
+                style="@style/Navigation_ImageView"
+                android:background="@android:drawable/ic_menu_search"
+                android:backgroundTint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textViewSearch"
+                style="@style/Navigation_Text"
+                android:layout_toRightOf="@+id/imageViewSearch"
+                android:text="Search" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="32dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTabRanking"
+            style="@style/Navigation_Relative_Lay">
+
+            <ImageView
+                android:id="@+id/imageViewRanking"
+                style="@style/Navigation_ImageView"
+                android:background="@mipmap/ranking" />
+
+            <TextView
+                android:id="@+id/textViewRanking"
+                style="@style/Navigation_Text"
+                android:layout_toRightOf="@+id/imageViewRanking"
+                android:text="Ranking" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="32dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTabCompare"
+            style="@style/Navigation_Relative_Lay">
+
+            <ImageView
+                android:id="@+id/imageViewCompare"
+                style="@style/Navigation_ImageView"
+                android:background="@mipmap/compare" />
+
+            <TextView
+                android:id="@+id/textViewCompare"
+                style="@style/Navigation_Text"
+                android:layout_toRightOf="@+id/imageViewCompare"
+                android:text="Compare" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="32dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTabCommunity"
+            style="@style/Navigation_Relative_Lay">
+
+            <ImageView
+                android:id="@+id/imageViewCommunity"
+                style="@style/Navigation_ImageView"
+                android:background="@mipmap/community" />
+
+            <TextView
+                android:id="@+id/textViewCommunity"
+                style="@style/Navigation_Text"
+                android:layout_toRightOf="@+id/imageViewCommunity"
+                android:text="Community" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="32dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTabFeedback"
+            style="@style/Navigation_Relative_Lay">
+
+            <ImageView
+                android:id="@+id/imageViewFeedback"
+                style="@style/Navigation_ImageView"
+                android:background="@mipmap/feedback" />
+
+            <TextView
+                android:id="@+id/textViewFeedback"
+                style="@style/Navigation_Text"
+                android:layout_toRightOf="@+id/imageViewFeedback"
+                android:text="Feedback" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="32dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

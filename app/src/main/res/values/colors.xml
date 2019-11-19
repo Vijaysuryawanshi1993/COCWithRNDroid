@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="accent">#FF5252</color>
+    <color name="accent_faint">#c6ff5252</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="recycler_back">#e8e2e2e2</color>
+
+    <color name="background">#365666</color>
+    <color name="purple">#d500f9</color>
+    <color name="purple_faint">#ef92ff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_faint">#666666</color>
+    <color name="black">#000000</color>
+
+    <color name="blue">#1E88E5</color>
+    <color name="blue_faint">#61b5ff</color>
+    <color name="blue_altra_faint">#90cafd</color>
+    <color name="yellow">#FFA726</color>
+</resources>

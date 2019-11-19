@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@android:color/white"
+                app:iconifiedByDefault="false"
+                app:queryHint="Find Clan,Player (name or tag)"></android.support.v7.widget.SearchView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageViewBarberian"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@mipmap/barberian" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@+id/imageViewBarberian"
+                            android:paddingLeft="8dp"
+                            android:text="Trophies Ranking"
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tabLegendLeague"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Legend League"
+                                android:textColor="@color/purple" />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:id="@+id/tabPlayer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/divider"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Player"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:id="@+id/tabClan"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/divider"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Clan"
+                                android:textColor="@android:color/black" />
+
+                        </LinearLayout>
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewPagerTrophiesRanking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="195dp">
+
+                        </android.support.v4.view.ViewPager>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageViewBarberian1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@mipmap/barberian" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@+id/imageViewBarberian1"
+                            android:paddingLeft="8dp"
+                            android:text="War Ranking"
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tabCurrentWarWin"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Current War Win"
+                                android:textColor="@color/blue" />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:id="@+id/tabBestWarWin"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/divider"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Best War Win"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:id="@+id/tabTotalWarWin"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/divider"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Total War Win"
+                                android:textColor="@android:color/black" />
+
+                        </LinearLayout>
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewPagerWarRanking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="195dp"
+                            android:layout_marginBottom="12dp">
+
+                        </android.support.v4.view.ViewPager>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageViewBarberian2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@mipmap/barberian" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@+id/imageViewBarberian2"
+                            android:paddingLeft="8dp"
+                            android:text="Versus Ranking"
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/tabPlayersRanking"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Players Ranking"
+                                android:textColor="@color/blue" />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:id="@+id/tabClanRanking"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/divider"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Clan Ranking"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewPagerVersusRanking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="195dp"
+                            android:layout_marginBottom="24dp">
+
+                        </android.support.v4.view.ViewPager>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
